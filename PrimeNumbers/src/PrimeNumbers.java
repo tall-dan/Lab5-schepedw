@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 
 /**
  * TODO Put here a description of what this class does.
@@ -7,4 +9,8 @@
  */
 public class PrimeNumbers {
 
+	
+	public static ArrayList<Integer> generatePrimes(int x){
+			return new ArrayList<Integer>();
+	}
 }

@@ -21,12 +21,22 @@ public class PrimesLessThanNTest {
 	
 	@Test
 	public void testGetPrimesTwo() {
-		assertEquals(list(2), PrimesLessThanN.getPrimes(2));
+		assertEquals(new ArrayList<Integer>(), PrimesLessThanN.getPrimes(2));
 	}
 	
 	@Test
 	public void testGetPrimesThree() {
-		assertEquals(list(2, 3), PrimesLessThanN.getPrimes(3));
+		assertEquals(list(2), PrimesLessThanN.getPrimes(3));
+	}
+	
+	@Test
+	public void testIsPrimeTwo() {
+		assertTrue(PrimesLessThanN.isPrime(2));
+	}
+	
+	@Test
+	public void testIsPrimeThree() {
+		assertTrue(PrimesLessThanN.isPrime(3));
 	}
 	
 	private ArrayList<Integer> list(int...ints){

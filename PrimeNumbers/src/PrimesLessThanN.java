@@ -12,17 +12,26 @@ public class PrimesLessThanN {
 	public static ArrayList<Integer> getPrimes(int n) {
 		ArrayList<Integer> numList = new ArrayList<Integer>();
 		
-		if (n <= 1) {
-			return numList;
-		}
-		
-		if (n == 2) {
-			numList.add(2);
-			return numList;
+		int i = 2;
+		while (i <= n) {
+			if (isPrime(i)) {
+				numList.add(i);
+			}
+			i++;
 		}
 		
 		return numList;
 	}
 	
-	
+	public static boolean isPrime(int n) {
+		
+		int i = 2;
+		while (i <= (n/2 + 1)) {
+			if (n % i == 0) {
+				return false;
+			}
+			i++;
+		}
+		return true;
+	}
 }

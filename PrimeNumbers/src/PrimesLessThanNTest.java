@@ -39,6 +39,26 @@ public class PrimesLessThanNTest {
 		assertTrue(PrimesLessThanN.isPrime(3));
 	}
 	
+	@Test
+	public void testIsPrimeThirteen() {
+		assertTrue(PrimesLessThanN.isPrime(13));
+	}
+	
+	@Test
+	public void testIsPrimeTwentyOne() {
+		assertTrue(PrimesLessThanN.isPrime(21));
+	}
+	
+	@Test
+	public void testIsPrimeOneHundredOne() {
+		assertTrue(PrimesLessThanN.isPrime(101));
+	}
+	
+	@Test
+	public void testIsPrimeBigNumber() {
+		assertTrue(PrimesLessThanN.isPrime(7919));
+	}
+	
 	private ArrayList<Integer> list(int...ints){
 		ArrayList<Integer> ret =new ArrayList<Integer>();
 		for (int i : ints){

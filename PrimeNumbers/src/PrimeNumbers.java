@@ -16,9 +16,7 @@ public class PrimeNumbers {
 				x /= candidate;
 			}
 		}
-		if (x > 1) {
-			ret.add(x);
-		}
+
 		return ret;
 	}
 }

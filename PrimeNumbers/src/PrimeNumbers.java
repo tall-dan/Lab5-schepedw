@@ -10,7 +10,7 @@ public class PrimeNumbers {
 	public static ArrayList<Integer> generatePrimes(int x) {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 
-		if (x % 2 == 0) {
+		while (x % 2 == 0) {
 			ret.add(2);
 			x /= 2;
 		}

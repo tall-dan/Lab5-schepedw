@@ -10,6 +10,19 @@ import java.util.ArrayList;
 public class PrimesLessThanN {
 	
 	public static ArrayList<Integer> getPrimes(int n) {
-		return new ArrayList<Integer>();
+		ArrayList<Integer> numList = new ArrayList<Integer>();
+		
+		if (n <= 1) {
+			return numList;
+		}
+		
+		if (n == 2) {
+			numList.add(2);
+			return numList;
+		}
+		
+		return numList;
 	}
+	
+	
 }

@@ -19,5 +19,17 @@ public class PrimesLessThanNTest {
 		assertEquals(new ArrayList<Integer>(), PrimesLessThanN.getPrimes(-5));
 	}
 	
+	@Test
+	public void testTwo() {
+		assertEquals(list(2), PrimesLessThanN.getPrimes(2));
+	}
 	
+	private ArrayList<Integer> list(int...ints){
+		ArrayList<Integer> ret =new ArrayList<Integer>();
+		for (int i : ints){
+			ret.add(i);
+		}
+		return ret;
+		
+	}
 }

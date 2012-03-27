@@ -33,7 +33,7 @@ public class factTester {
 	
 	@Test
 	public void testFour(){
-		assertEquals(list(4),PrimeNumbers.generatePrimes(4));
+		assertEquals(list(2,2),PrimeNumbers.generatePrimes(4));
 	}
 	
 	private ArrayList<Integer> list(int...ints){

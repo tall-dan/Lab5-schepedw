@@ -59,6 +59,17 @@ public class PrimesLessThanNTest {
 		assertTrue(PrimesLessThanN.isPrime(7919));
 	}
 	
+	@Test
+	public void testGetPrimesThirteen() {
+		assertEquals(list(2, 3, 5, 7, 11), PrimesLessThanN.getPrimes(13));
+	}
+	
+	@Test
+	public void testGetPrimesSixtyTwo() {
+		assertEquals(list(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61),
+				PrimesLessThanN.getPrimes(62));
+	}
+	
 	private ArrayList<Integer> list(int...ints){
 		ArrayList<Integer> ret =new ArrayList<Integer>();
 		for (int i : ints){

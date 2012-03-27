@@ -31,6 +31,10 @@ public class factTester {
 		assertEquals(list(3), PrimeNumbers.generatePrimes(3));
 	}
 	
+	@Test
+	public void testFour(){
+		assertEquals(list(4),PrimeNumbers.generatePrimes(4));
+	}
 	
 	private ArrayList<Integer> list(int...ints){
 		ArrayList<Integer> ret =new ArrayList<Integer>();

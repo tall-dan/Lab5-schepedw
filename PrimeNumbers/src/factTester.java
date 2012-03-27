@@ -20,4 +20,9 @@ public class factTester {
 		assertEquals(new ArrayList<Integer>(),PrimeNumbers.generatePrimes(1));
 	}
 	
+	@Test
+	public void testTwo(){
+		assertEquals(new ArrayList<Integer>(2), PrimeNumbers.generatePrimes(2));
+	}
+	
 }

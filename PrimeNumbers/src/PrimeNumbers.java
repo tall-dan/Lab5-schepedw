@@ -12,8 +12,9 @@ public class PrimeNumbers {
 	
 	public static ArrayList<Integer> generatePrimes(int x){
 			ArrayList<Integer> ret= new ArrayList<Integer>();
-			if (x>1)
-				ret.add(2);
+			if (x>1){
+				ret.add(x);
+			}
 			return ret;
 	}
 }

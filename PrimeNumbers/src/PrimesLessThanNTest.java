@@ -46,7 +46,7 @@ public class PrimesLessThanNTest {
 	
 	@Test
 	public void testIsPrimeTwentyOne() {
-		assertTrue(PrimesLessThanN.isPrime(21));
+		assertFalse(PrimesLessThanN.isPrime(21));
 	}
 	
 	@Test

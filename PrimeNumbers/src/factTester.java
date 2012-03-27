@@ -22,7 +22,17 @@ public class factTester {
 	
 	@Test
 	public void testTwo(){
-		assertEquals(new ArrayList<Integer>(2), PrimeNumbers.generatePrimes(2));
+		assertEquals(list(2), PrimeNumbers.generatePrimes(2));
+	}
+	
+	
+	private ArrayList<Integer> list(int...ints){
+		ArrayList<Integer> ret =new ArrayList<Integer>();
+		for (int i : ints){
+			ret.add(i);
+		}
+		return ret;
+		
 	}
 	
 }

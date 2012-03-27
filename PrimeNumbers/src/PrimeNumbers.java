@@ -10,9 +10,11 @@ public class PrimeNumbers {
 	public static ArrayList<Integer> generatePrimes(int x) {
 		ArrayList<Integer> ret = new ArrayList<Integer>();
 
-		while (x % 2 == 0) {
-			ret.add(2);
-			x /= 2;
+		for (int candidate = 2; x > 1; candidate++) {
+			while (x % candidate == 0) {
+				ret.add(candidate);
+				x /= candidate;
+			}
 		}
 		if (x > 1) {
 			ret.add(x);
